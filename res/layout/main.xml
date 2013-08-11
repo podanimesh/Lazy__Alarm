@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=" Hit The Lazy Button"
+        android:textSize="25dp"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/alarmEnabled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alarm Enabled"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/startSetDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lazy" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repeat Daily" />
+
+        <CheckBox
+            android:id="@+id/lazy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:enabled="false"
+            android:gravity="center_vertical|start|right"
+            android:scrollHorizontally="false"
+            android:text="Lazy Options" />
+    </LinearLayout>
+
+  <!--  <TextureView
+        android:id="@+id/textureView1"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:clickable="false" />
+-->
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        
+        >
+
+        <EditText
+            android:id="@+id/delay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter The Alarm Delay in Minutes"
+            android:inputType="numberSigned" >
+        </EditText>
+
+    <!--      <TextureView
+            android:id="@+id/textureView2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:clickable="false" />
+-->
+        <EditText
+            android:id="@+id/repeatTimes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="How Many Alarms"
+            android:inputType="numberSigned" >
+        </EditText>
+        
+<!--         <TextureView
+            android:id="@+id/textureView3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:clickable="false" />
+-->
+        <Button
+            android:id="@+id/lazyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set My Lazy Alarms" />
+        
+    </LinearLayout>
+
+</LinearLayout>
